@@ -7,7 +7,12 @@ def write_file_string(file_name, string_of_lines):
     x.write(str(string_of_lines) + '\n')
     x.close()
 
+def helloWorld():
+	print("Hello World")
+
+
 if __name__ == '__main__':
     file1 = 'jeremy.txt'
     string1 = 'Jeremy May\nThis file is from lab3\n'
     write_file_string(file1,string1)
+    helloWorld()
