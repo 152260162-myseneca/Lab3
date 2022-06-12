@@ -1,0 +1,13 @@
+#!/usr/bin/env python3
+# Author ID: jmay10
+
+#This function takes two strings, writes the string to the file.
+def write_file_string(file_name, string_of_lines):
+    x = open(file_name, 'w')
+    x.write(str(string_of_lines) + '\n')
+    x.close()
+
+if __name__ == '__main__':
+    file1 = 'jeremy.txt'
+    string1 = 'Jeremy May\nThis file is from lab3\n'
+    write_file_string(file1,string1)
